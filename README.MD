@@ -40,7 +40,7 @@ a)
 SELECT brand, model, COUNT(contract_id) AS popular_car
 FROM cars
 GROUP BY brand, model
-ORDER BY purchase_count DESC
+ORDER BY popular_car DESC
 LIMIT 1;
 ```
 b) 
