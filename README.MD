@@ -57,7 +57,7 @@ SELECT brand, model, MONTH(sale_date) AS top_month
 FROM cars
 WHERE brand == "Kia" AND model == "Rio"
 GROUP BY MONTH(sale_date)
-ORDER BY sales_count DESC
+ORDER BY top_month DESC
 LIMIT 1;
 ```
 
